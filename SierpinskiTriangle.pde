@@ -1,5 +1,5 @@
 int a = 500;
-double hue = 0;
+double hue = 1;
 double change = .3;
 boolean random = false;
 boolean rainbow = false;
@@ -10,7 +10,7 @@ public void setup() {
 public void draw() {
 	background(0);
 	hue += change;
-	if(hue >= 100 || hue <= 0)
+	if(hue >= 100 || hue <= 1)
 		change *= -1;
 	sierpinski(0, 499, 499);
 }
